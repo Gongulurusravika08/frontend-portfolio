@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Developer Portfolio</title>
+  <style>
+    /* ====== Basic Reset ====== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      line-height: 1.6;
+      padding: 40px;
+    }
+
+    /* ====== Header & Nav ====== */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #007acc;
+      margin-right: 20px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #005999;
+    }
+
+    /* ====== Layout ====== */
+    main {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 30px;
+    }
+
+    section {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 32px;
+      color: #222;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      font-size: 22px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      color: #007acc;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      list-style-type: square;
+      margin-left: 20px;
+    }
+
+    /* ====== Reviews Section ====== */
+    .reviews blockquote {
+      background: #e8f4ff;
+      border-left: 5px solid #007acc;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    /* ====== Responsive Design ====== */
+    @media (max-width: 768px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>Frontend Developer</h2>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Projects</a>
+      <a href="#">Address</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div>
+      <section class="intro">
+        <h1>Your Name</h1>
+        <h2>Frontend Developer</h2>
+        <p>HTML only with proper layout, no styling</p>
+      </section>
+
+      <section class="projects">
+        <h3>Projects</h3>
+        <ul>
+          <li>HTML Only Portfolio</li>
+          <li>Calculator</li>
+          <li>Quiz App</li>
+          <li>Countdown Timer</li>
+          <li>Product Landing Page</li>
+        </ul>
+      </section>
+
+      <section class="work">
+        <h3>Work Experience</h3>
+        <p>Worked on 3–4 frontend projects.</p>
+      </section>
+
+      <section class="education">
+        <h3>Education</h3>
+        <p>Graduated with 3.6 GPA</p>
+      </section>
+    </div>
+
+    <section class="reviews">
+      <h3>Reviews from My Teachers</h3>
+      <blockquote>John Doe was a brilliant student who stood out with his assignments.</blockquote>
+      <blockquote>John Doe showed great creativity and consistency in his work.</blockquote>
+    </section>
+  </main>
+
+</body>
+</html>
